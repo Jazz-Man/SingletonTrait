@@ -1,0 +1,2 @@
+# SingletonTrait
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/c51458fc880c46509de7dc6887deef4d)](https://app.codacy.com/app/vsokolyk/SingletonTrait?utm_source=github.com&utm_medium=referral&utm_content=Jazz-Man/SingletonTrait&utm_campaign=Badge_Grade_Dashboard)
