@@ -3,13 +3,13 @@
 namespace JazzMan\Traits;
 
 /**
- * Trait SingletonTrait
- *
- * @package JazzMan\Traits
+ * Trait SingletonTrait.
  */
 trait SingletonTrait
 {
-
+    /**
+     * @var self
+     */
     private static $instance;
 
     /**
@@ -17,10 +17,18 @@ trait SingletonTrait
      */
     public static function getInstance()
     {
-        if ( ! self::$instance) {
+        if (null === self::$instance) {
             self::$instance = new self();
         }
 
         return self::$instance;
+    }
+
+    public function __wakeup()
+    {
+    }
+
+    private function __clone()
+    {
     }
 }
