@@ -13,12 +13,14 @@ trait SingletonTrait
     private static $instance;
 
     /**
+     * @param null|mixed ...$props
+     *
      * @return self
      */
-    public static function getInstance()
+    public static function getInstance(...$props)
     {
         if (null === self::$instance) {
-            self::$instance = new self();
+            self::$instance = new self(...$props);
         }
 
         return self::$instance;
